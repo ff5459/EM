@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orders Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Orders Management</h1>
+
+    <!-- Upload CSV File -->
+    <div class="section">
+      <h3>Upload CSV File</h3>
+      <input type="file" id="fileInput" accept=".csv">
+      <button onclick="uploadFile()">Upload</button>
+      <button onclick="deleteData()">Clear</button>
+      <p id="uploadMessage" class="message"></p>
+    </div>
+
+    <!-- Fetch and Download Orders -->
+    <div class="section">
+      <h3>Fetch and Download Orders by Region</h3>
+      <input type="text" id="regionInput" placeholder="Enter region">
+      <button onclick="fetchOrders()">Fetch Orders</button>
+      <button onclick="downloadOrders()">Download CSV</button>
+      <p id="fetchMessage" class="message"></p>
+    </div>
+
+    <!-- Display Orders Table -->
+    <div class="section">
+      <h3>Orders</h3>
+      <table id="ordersTable">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Date</th>
+            <th>Region</th>
+          </tr>
+        </thead>
+        <tbody id="ordersTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
