@@ -7,8 +7,8 @@ https://drive.google.com/file/d/1vmkNvGdWtarYZqIa9zFR9UGIih6waef-/view?pli=1
 
 Перед началом убедитесь, что у вас установлены следующие инструменты:
 
-- [Docker](https://www.docker.com/get-started) >= 20.x
-- [Docker Compose](https://docs.docker.com/compose/install/) >= 1.27.4
+- [Docker](https://www.docker.com/get-started)
+- [Docker Compose](https://docs.docker.com/compose/install/)
 
 ## Установка
 
@@ -17,9 +17,17 @@ git clone https://github.com/ff5459/EM.git
 
 ## Запуск
 
+прошишите в командной строке
 docker compose up -d --build
 
 Сервис будет доступен по адресу http://localhost:80
+
+## Исползование
+
+1. Загрузить данные (тестовые находятся в EM/data.csv)
+2. Нажать Upload
+3. Выбрать регион
+4. Опционально скачать результат
 
 ## Остановка
 
